@@ -1,0 +1,16 @@
+<ngx-ui-loader
+  fgsColor="#ff4081"
+  text="Please Wait!"
+  pbColor="#ff4081"
+  [pbThickness]="6"
+  textColor="#ff4081"
+></ngx-ui-loader>
+
+<div ngxUiLoaderBlurred [blur]="6">
+  <!-- This is used to blur the background while loading of the page -->
+  <!-- Navbar Static -->
+  <app-navbar></app-navbar>
+
+  <!-- Dynamic Routing -->
+  <router-outlet></router-outlet>
+</div>
